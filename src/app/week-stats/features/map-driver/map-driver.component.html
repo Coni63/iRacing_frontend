@@ -1,0 +1,37 @@
+<div class="card">
+    <div class="container">
+        <div>
+            <h1><b>Drivers</b></h1>
+        </div>
+        <div class="map-container">
+            <div class="map-content" leaflet [leafletOptions]="options" [leafletLayers]="layers"></div>
+            <ng-container  *ngIf="selectedLegendInfos.length > 0">
+                <div class="firstPlan legend">
+                    <div fxLayout="column" class="color-block" fxLayoutGap="10px" >
+                        <div fxLayoutAlign="center">
+                            <h3>Drivers</h3>
+                        </div>
+                        <div fxLayout="column">
+                            <div fxFlex fxLayout="row" class="row-legend" fxLayoutGap="5px" *ngFor="let color of selectedLegendColorGradient, let idx=index;">
+                                <div fxLayout="row" fxLayoutAlign="center center" >
+                                    <div [style.background]="color" class="squareLegend"></div>
+                                </div>
+                                <div fxFlex class="label">{{ selectedLegendInfos[idx] | number: '.0' }}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="firstPlan legendTop" *ngIf="countryCode != ''">
+                    <div fxLayout="column" fxLayoutAlign="center">
+                        <div fxLayoutAlign="center">
+                            <h3>{{countryCode}}</h3>
+                        </div>
+                        <div fxLayoutAlign="center">
+                            <h3>{{numberRacers | number: '.0'}}</h3>     
+                        </div>
+                    </div> 
+                </div>
+            </ng-container> 
+        </div>
+    </div>
+</div>

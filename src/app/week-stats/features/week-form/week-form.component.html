@@ -1,0 +1,26 @@
+<div class="card">
+    <div class="container">
+        <h1><b>Inputs</b></h1>
+        <div fxLayout="column" fxLayoutAlign="space-around stretch" >
+          <div>
+            <mat-button-toggle-group name="selectedMode" aria-label="selectedMode" (change)="changeMode($event)" [value]="selectedMode">
+              <mat-button-toggle value="Road">Road</mat-button-toggle>
+              <mat-button-toggle value="Oval">Oval</mat-button-toggle>
+              <mat-button-toggle value="Dirt_Road">Dirt Road</mat-button-toggle>
+              <mat-button-toggle value="Dirt_Oval">Dirt Oval</mat-button-toggle>
+            </mat-button-toggle-group>
+          </div>
+          <div>
+            <ng-container *ngIf="inputs != null">
+              <mat-form-field appearance="fill">
+                <mat-label>Select the week</mat-label>
+                <mat-select (selectionChange)="loadData($event)">
+                  <mat-option *ngFor="let week of inputs[selectedMode]" [value]="week.filename">{{ week.date }}</mat-option>
+                </mat-select>
+                <!-- <mat-hint align="end">Here's the dropdown arrow</mat-hint> -->
+              </mat-form-field>
+            </ng-container>
+          </div>
+        </div>
+    </div>
+</div>

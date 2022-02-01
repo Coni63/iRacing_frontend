@@ -1,0 +1,26 @@
+<div class="card">
+    <div class="container">
+        <h1><b>Awards</b></h1>
+        <table class="styled-table">
+            <thead>
+                <tr>
+                    <th>.</th>
+                    <th>Total</th>
+                    <th>Prom.</th>
+                    <th>Dem.</th>
+                </tr>
+            </thead>
+            <tbody>
+                <ng-container *ngIf="data != null">
+                    <tr *ngFor="let category of categories">
+                        <th>{{ category.title }}</th>
+                        <td>{{  data[category.category].name }}</td>
+                        <td><span [ngClass]="getClass(data[category.category].from)">{{  data[category.category].from }}</span></td>
+                        <td><span [ngClass]="getClass(data[category.category].to)">{{  data[category.category].to }}</span></td>
+                    </tr>
+                </ng-container>
+            </tbody>
+        </table>
+    </div>
+</div>
+

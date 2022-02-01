@@ -1,0 +1,18 @@
+<div class="card">
+    <div class="container">
+        <div class="button-groups" fxLayout="row" fxLayoutAlign="space-between center" >
+            <div>
+                <h1><b>IR Distribution</b></h1>
+            </div>
+            <div>
+                <mat-button-toggle-group name="selectedMode" aria-label="selectedMode" (change)="changeMode($event)" [value]="selectedMode">
+                    <mat-button-toggle value="IRating">IRating</mat-button-toggle>
+                    <mat-button-toggle value="TTRating">TTRating</mat-button-toggle>
+                    <mat-button-toggle value="IRatingPercent">IRating %</mat-button-toggle>
+                    <mat-button-toggle value="TTRatingPercent">TTRating %</mat-button-toggle>
+                </mat-button-toggle-group>
+            </div>
+        </div>
+        <div echarts  (chartInit)="onChartInit($event)" [options]="chartOption" [loading]="isLoading" theme="macarons" class="demo-chart"></div>
+    </div>
+</div>

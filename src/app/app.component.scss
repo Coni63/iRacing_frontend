@@ -1,0 +1,21 @@
+#container {
+    position: absolute;
+    width: 100%;
+    // height: calc(100vh - 64px);
+    height: 100vh;
+    // top: 64px;
+}
+
+#content {
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+}
+
+// .example-spacer {
+//     flex: 1 1 auto;
+// }
+
+.gap-xl {
+    margin-right: 50px;
+}

@@ -1,0 +1,74 @@
+<div class="wrapper" *ngIf="(selectedData | json) != '{}'">
+  <div class="block2" id="racesDone">
+    <app-base-card 
+      [data]="selectedData.racesDone" 
+      icon="assets/309862.svg" 
+      title="Races dones"
+      tootipText="Count of starts from every driver. A race with 20 driver will count as 20, not 1">
+    </app-base-card>
+  </div>
+  <div class="block2" id="newRacers">
+    <app-base-card 
+      [data]="selectedData.newRacers" 
+      icon="assets/racing-helmet-svgrepo-com.svg"
+      title="New Racers"
+      tootipText="Number of active racers during the week (and new ones)"
+      deltaText="new drivers">
+    </app-base-card>
+  </div>
+  <div class="block2" id="licenseChange">
+    <app-license-change 
+      [data]="selectedData.licenseChange" 
+      icon="assets/license-svgrepo-com.svg"
+      title="License change">
+    </app-license-change>
+  </div>
+  <div class="block2" id="inputBlock">
+    <app-week-form [inputs]="allInputs" (onWeekChange)="updateData($event)" (onModeChange)="resetData($event)"></app-week-form>
+  </div>
+  <div class="block2" id="lapsDone">
+    <app-base-card 
+      [data]="selectedData.lapsDone" 
+      icon="assets/car-race-circuit-svgrepo-com.svg"
+      title="Laps done"
+      tootipText="Number of laps done in races during the week">
+    </app-base-card>
+  </div>
+  <div class="block2" id="avgInc">
+    <app-base-card 
+      [data]="selectedData.avgInc" 
+      icon="assets/increase-level-svgrepo-com.svg"
+      title="Average Inc."
+      tootipText="Avg Inc per race from active players at the end of the week">
+    </app-base-card>
+  </div>
+  <div class="block2" id="awards">
+    <app-runner-up 
+      [data]="selectedData.awards" 
+      icon="assets/awards-svgrepo-com.svg"
+      title="Awards">
+    </app-runner-up>
+  </div>
+  <div class="block2" id="dist">
+    <app-dist-ir [data]="selectedData.dist"></app-dist-ir>
+  </div>
+  <div class="block2" id="country">
+    <app-map-driver [data]="selectedData.country"></app-map-driver>
+  </div>
+  <div class="block2" id="avgIR">
+    <app-base-card 
+      [data]="selectedData.avgIR" 
+      icon="assets/increase-level-svgrepo-com.svg"
+      title="Average IRating."
+      tootipText="Avg IR of active players at the end of the week">
+    </app-base-card>
+  </div>
+  <div class="block2" id="avgTT">
+    <app-base-card 
+      [data]="selectedData.avgTT" 
+      icon="assets/increase-level-svgrepo-com.svg"
+      title="Average TTRating."
+      tootipText="Avg TTRating of active players at the end of the week">
+    </app-base-card>
+  </div>
+</div>

@@ -1,0 +1,49 @@
+<div class="card">
+    <div fxLayout="row" fxLayoutAlign="space-between stretch" fxLayoutGap="10px">
+        <div fxLayout="row" fxLayoutAlign="center center" fxFlex="20">
+            <img class="icon" [src]="icon"/>
+        </div>
+        <div fxLayout="column" fxLayoutAlign="space-evenly stretch" fxFlex>
+
+            <div fxLayout="row" fxLayoutAlign="end end" fxFlex>
+                <div class="content-value" *ngIf="data.value>=1000">{{ data.value | number: '.0-0' }}</div>
+                <div class="content-value" *ngIf="data.value<1000">{{ data.value | number: '.0' }}</div>
+                <div *ngIf="(data.total) && (data.delta)">/{{ data.total | number: '.0' }}</div>
+            </div>
+
+            <div fxLayout="row" fxLayoutAlign="end center" fxLayoutGap="5px" fxFlex *ngIf="data.delta" class="delta-content">
+                <div *ngIf="deltaText==''">
+                    <mat-icon *ngIf="data.delta < 0">trending_down</mat-icon>
+                    <mat-icon *ngIf="data.delta > 0">trending_up</mat-icon>
+                </div>
+                <div>{{ data.delta > 0 ? '+' : ''}}{{ data.delta | number: '.0'}}</div>
+                <div>{{ deltaText }}</div>
+            </div>
+            <div fxLayout="row" fxLayoutAlign="end center" fxLayoutGap="5px" fxFlex *ngIf="(data.total) && (!data.delta)"  class="delta-content">
+                <div>/{{ data.total | number: '.0' }}</div>
+                <div>{{ deltaText }}</div>
+            </div>
+            
+            <div class="spacer"></div>
+
+            <div class="content-label" >
+                <div fxLayout="row" fxLayoutAlign="end stretch" fxLayoutGap="5px">
+                    <div>
+                        <mat-icon  
+                            *ngIf="tootipText != ''"
+                            [matTooltip]="tootipText"
+                            matTooltipPosition="above"
+                            matTooltipHideDelay="100000"
+                            aria-label="Button that displays a tooltip that hides when scrolled out of the container">
+                            help
+                        </mat-icon>
+                    </div>
+                    <div>
+                        {{ title }}
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

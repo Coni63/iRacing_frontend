@@ -1,0 +1,26 @@
+<div class="card">
+    <div class="container">
+        <h1><b>License Change</b></h1>
+        <table class="styled-table">
+            <thead>
+                <tr>
+                    <th>Cat.</th>
+                    <th>Total</th>
+                    <th>Prom.</th>
+                    <th>Dem.</th>
+                </tr>
+            </thead>
+            <tbody>
+                <ng-container *ngIf="data != null">
+                    <tr *ngFor="let category of categories">
+                        <th>{{ category }}</th>
+                        <td>{{ data[category].total }}</td>
+                        <td>{{ data[category].promoted }}</td>
+                        <td>{{ data[category].demoted }}</td>
+                    </tr>
+                </ng-container>
+            </tbody>
+        </table>
+    </div>
+</div>
+
