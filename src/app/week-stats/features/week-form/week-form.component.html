@@ -14,7 +14,7 @@
             <ng-container *ngIf="inputs != null">
               <mat-form-field appearance="fill">
                 <mat-label>Select the week</mat-label>
-                <mat-select (selectionChange)="loadData($event)">
+                <mat-select (selectionChange)="changeWeek($event)">
                   <mat-option *ngFor="let week of inputs[selectedMode]" [value]="week.filename">{{ week.date }}</mat-option>
                 </mat-select>
                 <!-- <mat-hint align="end">Here's the dropdown arrow</mat-hint> -->

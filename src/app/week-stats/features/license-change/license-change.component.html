@@ -4,7 +4,7 @@
         <table class="styled-table">
             <thead>
                 <tr>
-                    <th>Cat.</th>
+                    <th></th>
                     <th>Total</th>
                     <th>Prom.</th>
                     <th>Dem.</th>
@@ -13,7 +13,7 @@
             <tbody>
                 <ng-container *ngIf="data != null">
                     <tr *ngFor="let category of categories">
-                        <th>{{ category }}</th>
+                        <th><span [ngClass]="getClass(category)">Cat. {{ category }}</span></th>
                         <td>{{ data[category].total }}</td>
                         <td>{{ data[category].promoted }}</td>
                         <td>{{ data[category].demoted }}</td>

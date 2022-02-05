@@ -13,7 +13,8 @@ export class WeekFormComponent implements OnInit {
   @Output() onWeekChange = new EventEmitter<string>();
   @Output() onModeChange = new EventEmitter<boolean>();
 
-  selectedMode:string = "Road"
+  selectedMode: string = "Road";
+  selectedWeek: string = "";
 
   constructor() { }
 
@@ -24,11 +25,18 @@ export class WeekFormComponent implements OnInit {
 
   changeMode(event: any){
     this.selectedMode = event.value;
-    this.onModeChange.emit(true);
+    if (this.selectedWeek == ""){
+      this.onModeChange.emit(true);
+    } else {
+      const filename = `${this.selectedMode}_${this.selectedWeek}.json`;
+      this.onWeekChange.emit(filename);
+    }
   }
 
-  loadData(event: any){
-    this.onWeekChange.emit(event.value);
+  changeWeek(event: any){
+    this.selectedWeek = event.value;
+    const filename = `${this.selectedMode}_${this.selectedWeek}.json`;
+    this.onWeekChange.emit(filename);
   }
 
 }

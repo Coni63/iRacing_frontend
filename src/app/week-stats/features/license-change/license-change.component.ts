@@ -16,4 +16,11 @@ export class LicenseChangeComponent implements OnInit {
 
   ngOnInit(): void {  }
 
+  getClass(s: string|number): string {
+    if (typeof s === 'string'){
+      return "license-" + s.charAt(0);
+    }
+    return "rating"
+  }
+
 }
