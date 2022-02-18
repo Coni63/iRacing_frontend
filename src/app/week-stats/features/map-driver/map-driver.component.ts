@@ -72,12 +72,6 @@ export class MapDriverComponent implements OnInit {
         })
       )
     });
-
-    console.log("something to delete later");
-    setTimeout(() => { 
-      this.countryCode = "FR";
-      this.numberRacers = 10000
-    }, 500);
   }
 
   public highlightFeature(e: any): void {

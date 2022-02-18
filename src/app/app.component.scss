@@ -1,21 +1,18 @@
-#container {
+@import "../constants.scss";
+
+.background-container {
     position: absolute;
     width: 100%;
-    // height: calc(100vh - 64px);
     height: 100vh;
-    // top: 64px;
+    background-size:cover; 
+    width:auto;
+    background-image:url('../assets/background.jpg');
+    background-position: 50% 50%;
 }
 
-#content {
+.background-opacity {
     width: 100%;
     height: 100%;
     overflow: scroll;
-}
-
-// .example-spacer {
-//     flex: 1 1 auto;
-// }
-
-.gap-xl {
-    margin-right: 50px;
+    background: rgba($--wp--preset--color--cyan-bluish-gray, 0.75);
 }

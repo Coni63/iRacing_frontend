@@ -1,5 +1,6 @@
 import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
 import { IWeek, IWeekMaster } from '../../interfaces/istats';
+import { isDevMode } from '@angular/core';
 
 @Component({
   selector: 'app-week-form',
@@ -19,8 +20,9 @@ export class WeekFormComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    console.log("something to delete later");
-    setTimeout(() => { this.onWeekChange.emit("Road_20220111_20220118.json") }, 500);
+    if(isDevMode()) {
+      setTimeout(() => { this.onWeekChange.emit("Road_20220111_20220118.json") }, 500);
+    }
   }
 
   changeMode(event: any){

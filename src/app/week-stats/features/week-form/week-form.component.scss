@@ -20,5 +20,18 @@
   }
 
 mat-form-field {
-    width: 100%;
+    width:100%;
+}
+
+.mat-button-toggle-label {
+    flex: 1 1 100%;
+    box-sizing: border-box;
+    align-items: center;
+    flex-direction: row;
+    display: flex;
+
+    .mat-button-toggle-label-content {
+        text-align: center;
+        flex: 1 1 100%;
+    }
 }
