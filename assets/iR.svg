@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="120"
+   height="120"
+   viewBox="0 0 120 120"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
+   sodipodi:docname="dessin2.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="px"
+     showgrid="false"
+     inkscape:zoom="3.6375"
+     inkscape:cx="-99.106529"
+     inkscape:cy="22.268041"
+     inkscape:window-width="3440"
+     inkscape:window-height="1377"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer2" />
+  <defs
+     id="defs2">
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect24812"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <rect
+       x="17.319588"
+       y="34.089347"
+       width="79.965697"
+       height="50.00654"
+       id="rect11666" />
+  </defs>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       style="fill:none"
+       id="g25323"
+       transform="scale(2.5)">
+      <rect
+         width="48"
+         height="48"
+         fill="#ffffff"
+         fill-opacity="0.01"
+         id="rect25293"
+         x="0"
+         y="0" />
+      <g
+         id="g26941">
+        <path
+           d="m 30.2972,18.7786 c 0,0 -3.2293,9.1022 -4.7638,10.6913 -1.5346,1.5892 -4.0669,1.6334 -5.656,0.0988 -1.5892,-1.5346 -1.6334,-4.0669 -0.0988,-5.656 1.5346,-1.5891 10.5186,-5.1341 10.5186,-5.1341 z"
+           fill="#2f88ff"
+           stroke="#000000"
+           stroke-width="4"
+           stroke-linejoin="round"
+           id="path25295" />
+      </g>
+      <path
+         d="M 38.8492,38.8492 C 42.6495,35.049 45,29.799 45,24 45,12.402 35.598,3 24,3 12.402,3 3,12.402 3,24 3,29.799 5.35051,35.049 9.15076,38.8492"
+         stroke="#000000"
+         stroke-width="4"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         id="path25297" />
+      <path
+         d="M 24,4 V 8"
+         stroke="#000000"
+         stroke-width="4"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         id="path25299" />
+      <path
+         d="m 38.8454,11.1421 -3.1086,2.5172"
+         stroke="#000000"
+         stroke-width="4"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         id="path25301" />
+      <path
+         d="M 42.5225,27.2328 38.6251,26.333"
+         stroke="#000000"
+         stroke-width="4"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         id="path25303" />
+      <path
+         d="M 5.47749,27.2328 9.37497,26.333"
+         stroke="#000000"
+         stroke-width="4"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         id="path25305" />
+      <path
+         d="m 9.15463,11.1421 3.10857,2.5172"
+         stroke="#000000"
+         stroke-width="4"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         id="path25307" />
+    </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Calque 2"
+     style="display:inline">
+    <text
+       xml:space="preserve"
+       id="text11664"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:1.25;font-family:Verdana;-inkscape-font-specification:'Verdana, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;shape-inside:url(#rect11666);fill:#000000;fill-opacity:1;stroke:none"
+       transform="matrix(1.1726194,0,0,1.1455449,15.852616,37.42459)"><tspan
+         x="17.320312"
+         y="70.583056"
+         id="tspan40220">iR</tspan></text>
+  </g>
+</svg>
